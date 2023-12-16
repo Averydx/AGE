@@ -209,9 +209,9 @@ namespace AGE
 		flashLight.outerCutOff = glm::cos(glm::radians(17.5f)); 
 
 		DirectionalLight dirLight{}; 
-		dirLight.direction = glm::vec3(- 0.2f, -1.0f, -0.3f);
+		dirLight.direction = glm::vec3(0.f, -1.0f, 0.f);
 		dirLight.ambient = glm::vec3(0.05f, 0.05f, 0.05f);
-		dirLight.diffuse = glm::vec3( 0.4f, 0.4f, 0.4f);
+		dirLight.diffuse = glm::vec3( 1.0f, 0.4f, 0.4f);
 		dirLight.specular = glm::vec3(0.5f, 0.5f, 0.5f);
 
 

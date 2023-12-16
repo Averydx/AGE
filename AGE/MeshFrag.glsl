@@ -1,4 +1,6 @@
 #version 330 core
+
+#define numPointLights 4
 out vec4 FragColor;
 
 //Material info 
@@ -68,7 +70,7 @@ void main()
     vec3 result = CalcSpotLight(spotLight, norm, FragPos, viewDir); 
     result += CalcDirLight(dirLight, norm, viewDir); 
 
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < numPointLights; i++)
         result += CalcPointLight(pointLights[i], norm, FragPos, viewDir);
 
 
